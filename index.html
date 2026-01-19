@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Ensure Content Scales properly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Mateo Osorio Vela </title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Link to Local css -->
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="header-link">Miguel Mateo Osorio Vela</a>
+        <div class="header-center">
+            <a href="https://linkedin.com" target="_blank" class="header-icon"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank" class="header-icon"><i class="fab fa-github"></i></a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Miguel Mateo Osorio Vela</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="about" class="section">
+        <div class="about-container">
+            <img src="miguel.jpeg" alt="Miguel Osorio Vela" class="about-img">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I am a Computer Science student and Software Systems Engineer with a deep interest in algorithms, 
+                    time complexity analysis, and secure coding. My work focuses on bridging the gap between 
+                    theoretical computer science and practical, high-impact applications in AI and robotics.
+                </p>
+                <p>
+                    With experience in Python, Java, and Swift, I enjoy solving complex structural problems—from 
+                    optimizing Big O performance to developing intuitive user experiences on macOS and iOS. 
+                    I am a lifelong learner committed to technical excellence and collaborative innovation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        
+        <div class="project-list">
+            <div class="project-item">
+                <div class="project-icon-box"><i class="fas fa-brain"></i></div>
+                <div class="project-details">
+                    <h3>Movie Review Classification (LLMs vs. RNNs)</h3>
+                    <p class="motivation"><strong>The Motivation:</strong> As Large Language Models dominate the AI landscape, does "bigger" always mean "better" for specific tasks? This project investigates if the quantized Gemma 3 4B model can outpace traditional RNNs in sentiment accuracy.</p>
+                    <p>By implementing zero-shot and chain-of-thought prompting strategies, I demonstrate how programmatic prompting can handle the "noise" of LLM outputs to achieve high-precision classification on the IMDB dataset.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-icon-box"><i class="fas fa-user-shield"></i></div>
+                <div class="project-details">
+                    <h3>Facial Recognition (ML vs. DL)</h3>
+                    <p class="motivation"><strong>The Motivation:</strong> How much data do you really need to recognize a face? I used the Olivetti faces dataset to conduct a stress test between classical approaches (PCA and Logistic Regression) and modern deep learning baselines.</p>
+                    <p>This study maps the "tipping point" where complex models begin to outperform simple ones, providing a roadmap for choosing the right architecture based on available training data.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-icon-box"><i class="fas fa-chart-line"></i></div>
+                <div class="project-details">
+                    <h3>Input-Output Analysis: US Economy</h3>
+                    <p class="motivation"><strong>The Motivation:</strong> Can we predict the future of a global economy using linear algebra? By applying the Leontief Input-Output Model to 166 U.S. economic sectors, I built a Python-driven forecasting tool.</p>
+                    <p>Using 26 years of Bureau of Economic Analysis data, this project provides a data-backed projection of the U.S. economic structure through 2033, showcasing the power of NumPy and Pandas.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-icon-box"><i class="fas fa-robot"></i></div>
+                <div class="project-details">
+                    <h3>[Research] Analyzing Human-Robot Collaboration Failures</h3>
+                    <p class="motivation"><strong>The Motivation:</strong> Collaborative robots must be more than just competent—they must be predictable. In this research, we performed a systematic error analysis of a medication-dispensing task.</p>
+                    <p>We compared human performance against Action-Chunking Transformers (ACT) and Diffusion Policies, identifying an 8-category failure taxonomy to help build safer, human-centered robotic systems.</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-icon-box"><i class="fas fa-hourglass-start"></i></div>
+                <div class="project-details">
+                    <h3>Coming Soon...</h3>
+                    <p>Co-authoring a research paper in Human-Robot collaboration and exploring advanced reinforcement learning applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">Tech & Tools</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Languages</h4>
+                <div class="skill-pills">
+                    <span>Python</span><span>Java</span><span>Swift</span><span>C#</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>AI & Data</h4>
+                <div class="skill-pills">
+                    <span>PyTorch</span><span>NumPy</span><span>Pandas</span><span>LLMs</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Tools</h4>
+                <div class="skill-pills">
+                    <span>Git</span><span>Xcode</span><span>VS Code</span><span>macOS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for professional opportunities or project collaborations.</p>
+        <a href="mailto:miguel@example.com" class="email-link">miguel@example.com</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Miguel Mateo Osorio Vela. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
