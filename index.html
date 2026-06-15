@@ -9,19 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Devicon Icons -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <!-- Link to Local css -->
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
 
     <header class="header">
-        <a href="#" class="header-logo">MMOV</a>
+        <a href="#" class="header-logo">
+            <img src="logo_mmov_v1.png" alt="MMOV Logo" class="logo-image">
+        </a>
         <nav class="nav-menu">
             <ul>
                 <li><a href="#about">About me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Tools</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header-right">
@@ -42,14 +45,13 @@
                 <div class="hero-image-card">
                     <img src="miguel.jpg" alt="Miguel Mateo Osorio Vela">
                 </div>
-                <p class="hero-intro">Hi, I'm Miguel, a Software Developer & AI Engineer creating intuitive digital experiences.</p>
             </div>
         </div>
     </section>
 
     <section id="about" class="about-section">
         <div class="section-container">
-            <span class="section-tag">About Me</span>
+            <span class="section-tag-pill">About Me</span>
             <div class="about-content">
                 <p class="about-paragraph">
                     Computer Science graduate from the University of South Florida with hands-on experience across software development, deep learning, data analysis, cybersecurity, and cloud computing. Beyond technical skills, my differentiators are my collaboration, public speaking, and ability to share the passion behind my work.
@@ -61,13 +63,7 @@
     <section id="projects" class="projects-section">
         <div class="section-container">
             <div class="projects-header">
-                <div class="projects-header-left">
-                    <span class="section-tag-pill">Portfolio</span>
-                    <h2 class="section-title-large">Explore my portfolio of creative solutions</h2>
-                </div>
-                <div class="projects-header-right">
-                    <p class="section-subtitle">Explore my portfolio full of creative solutions.</p>
-                </div>
+                <span class="section-tag-pill">Portfolio</span>
             </div>
             
             <div class="projects-grid">
@@ -144,7 +140,7 @@
 
     <section id="skills" class="skills-section">
         <div class="section-container">
-            <span class="section-tag">Tech & Tools</span>
+            <span class="section-tag-pill">Tech & Tools</span>
             <h2 class="skills-title-large">My Technical Toolkit</h2>
             
             <div class="skills-grid">
@@ -153,32 +149,36 @@
                     <h4>Programming Languages</h4>
                     <div class="skill-pills">
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                            <i class="devicon-python-plain colored"></i>
                             <span>Python</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            <i class="devicon-csharp-plain colored"></i>
                             <span>C#</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            <i class="devicon-cplusplus-plain colored"></i>
                             <span>C++</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                            <i class="devicon-java-plain colored"></i>
                             <span>Java</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                            <svg class="tool-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="color: #4a5568;"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                             <span>COBOL</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            <i class="devicon-c-plain colored"></i>
                             <span>C</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                            <span>HTML / CSS</span>
+                            <i class="devicon-html5-plain colored"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-pill">
+                            <i class="devicon-css3-plain colored"></i>
+                            <span>CSS</span>
                         </div>
                     </div>
                 </div>
@@ -188,15 +188,18 @@
                     <h4>AI Tools & Libraries</h4>
                     <div class="skill-pills">
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                            <i class="devicon-pytorch-original colored"></i>
                             <span>PyTorch</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                            <i class="devicon-huggingface-original colored"></i>
                             <span>Hugging Face</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="18" y1="9" x2="18" y2="15"/><line x1="6" y1="9" x2="6" y2="15"/><line x1="9" y1="6" x2="15" y2="6"/><line x1="9" y1="18" x2="15" y2="18"/></svg>
+                            <svg class="tool-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="color: #f89939;">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/>
+                                <circle cx="12" cy="12" r="3" fill="#3498db"/>
+                            </svg>
                             <span>Scikit-learn</span>
                         </div>
                     </div>
@@ -207,20 +210,41 @@
                     <h4>Cloud Computing</h4>
                     <div class="skill-pills">
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                            <i class="devicon-amazonwebservices-original colored"></i>
                             <span>AWS Cloud Architecture</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-                            <span>EC2 / S3</span>
+                            <svg class="tool-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#FF9900" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="3"/>
+                                <path d="M9 8h6M9 12h6M9 16h6"/>
+                            </svg>
+                            <span>EC2</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                            <svg class="tool-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#E05243" stroke-width="2">
+                                <ellipse cx="12" cy="6" rx="8" ry="3"/>
+                                <path d="M4 6v12c0 1.66 3.58 3 8 3s8-1.34 8-3V6"/>
+                            </svg>
+                            <span>S3</span>
+                        </div>
+                        <div class="skill-pill">
+                            <svg class="tool-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#FF9900" stroke-width="2.5">
+                                <path d="M8 4l5 8-5 8M13 12h7"/>
+                            </svg>
                             <span>Lambda</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                            <span>IAM & Security</span>
+                            <svg class="tool-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#E05243" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="10" rx="2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <span>IAM</span>
+                        </div>
+                        <div class="skill-pill">
+                            <svg class="tool-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2ecc71" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                            <span>Security and Compliance</span>
                         </div>
                     </div>
                 </div>
@@ -230,20 +254,44 @@
                     <h4>Data Analysis</h4>
                     <div class="skill-pills">
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-                            <span>Pandas & NumPy</span>
+                            <i class="devicon-pandas-plain colored"></i>
+                            <span>Pandas</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+                            <i class="devicon-numpy-plain colored"></i>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="skill-pill">
+                            <svg class="tool-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="color: #107c41;">
+                                <path d="M16.2 2H7.8C6.8 2 6 2.8 6 3.8v16.4c0 1 .8 1.8 1.8 1.8h8.4c1 0 1.8-.8 1.8-1.8V3.8c0-1-.8-1.8-1.8-1.8zM8.4 17l2.1-3.5 2.1 3.5h2.4l-3.3-5.2 3.3-5.2h-2.4l-2.1 3.5L8.4 6.6h-2.4l3.3 5.2-3.3 5.2h2.4z"/>
+                            </svg>
                             <span>Excel</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/></svg>
-                            <span>Matplotlib & JASP</span>
+                            <svg class="tool-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#1f77b4" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 2v10h10"/>
+                            </svg>
+                            <span>JASP</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
-                            <span>SQL / Databases</span>
+                            <svg class="tool-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#ff4a00" stroke-width="2">
+                                <path d="M12 2l9 4.5v11L12 22l-9-4.5v-11L12 2z"/>
+                            </svg>
+                            <span>Label Studio</span>
+                        </div>
+                        <div class="skill-pill">
+                            <svg class="tool-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#11557c" stroke-width="2">
+                                <path d="M3 3v18h18M6 15l4-5 5 4 5-8"/>
+                            </svg>
+                            <span>Matplotlib</span>
+                        </div>
+                        <div class="skill-pill">
+                            <svg class="tool-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#336791" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/>
+                            </svg>
+                            <span>SQL</span>
                         </div>
                     </div>
                 </div>
@@ -253,31 +301,48 @@
                     <h4>Tools & Frameworks</h4>
                     <div class="skill-pills">
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg>
+                            <i class="devicon-git-plain colored"></i>
                             <span>Git</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
-                            <span>Agile / Jira</span>
+                            <svg class="tool-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#0052cc" stroke-width="2">
+                                <path d="M7 12c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5z"/>
+                                <path d="M12 7c2.8 0 5 2.2 5 5-2.2 5-5 5-5-2.2-5-5"/>
+                            </svg>
+                            <span>Agile</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                            <span>Docker</span>
+                            <i class="devicon-jira-plain colored"></i>
+                            <span>Jira</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-                            <span>Terraform</span>
+                            <i class="devicon-jupyter-plain colored"></i>
+                            <span>Jupyter Notebooks</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
+                            <i class="devicon-linux-plain colored"></i>
                             <span>Linux (Ubuntu)</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                            <span>VS Code</span>
+                            <i class="devicon-vscode-plain colored"></i>
+                            <span>Visual Studio Code</span>
                         </div>
                         <div class="skill-pill">
-                            <svg class="tool-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <svg class="tool-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="color: #742774;">
+                                <path d="M12 2L2 12l10 10 10-10L12 2zm0 3.5l6.5 6.5-6.5 6.5-6.5-6.5 6.5-6.5z"/>
+                            </svg>
+                            <span>Microsoft Power Apps</span>
+                        </div>
+                        <div class="skill-pill">
+                            <i class="devicon-docker-plain colored"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-pill">
+                            <i class="devicon-terraform-plain colored"></i>
+                            <span>Terraform</span>
+                        </div>
+                        <div class="skill-pill">
+                            <i class="devicon-jenkins-plain colored"></i>
                             <span>Jenkins</span>
                         </div>
                     </div>
@@ -289,7 +354,9 @@
     <footer id="contact" class="footer">
         <div class="footer-container">
             <div class="footer-left">
-                <h2 class="footer-logo">MMOV</h2>
+                <a href="#" class="footer-logo">
+                    <img src="logo_mmov_v1.png" alt="MMOV Logo" class="logo-image-footer">
+                </a>
                 <p class="footer-tagline">Computer Science graduate passionate about Software Development, AI, and Cybersecurity. Feel free to reach out for professional opportunities.</p>
                 <div class="footer-socials">
                     <a href="https://www.linkedin.com/in/miguelmateoosorio/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
