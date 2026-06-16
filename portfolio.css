@@ -8,12 +8,12 @@
     --text-muted: #5f5f5f;
     --border-color: #eaeaea;
     --border-hover: #b5b5b5;
-    
+
     /* Dark Theme Footer Contrast */
     --footer-bg: #111111;
     --footer-text: #ffffff;
     --footer-text-muted: #888888;
-    
+
     /* Animation speed */
     --transition-speed: 0.3s;
     --transition-ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -41,7 +41,10 @@ body {
 }
 
 /* Typography Base Defaults */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1.2;
@@ -70,7 +73,7 @@ h1, h2, h3, h4 {
 }
 
 .logo-image {
-    height: 50px;
+    height: 52px;
     width: auto;
     object-fit: contain;
 }
@@ -211,7 +214,7 @@ h1, h2, h3, h4 {
     border-radius: 24px;
     overflow: hidden;
     background-color: #f5f5f5;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
     transition: transform 0.5s var(--transition-ease);
 }
 
@@ -282,34 +285,80 @@ h1, h2, h3, h4 {
     overflow: hidden;
     aspect-ratio: 4 / 3;
     background-color: #f7f7f7;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
     cursor: pointer;
 }
 
 .project-img-container {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
-.project-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+/* Typography / Title Cards */
+.project-title-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #1f2029 0%, #0f1015 100%);
+    padding: 2.5rem;
+    position: relative;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s var(--transition-ease);
 }
 
-.project-card:hover .project-img {
-    transform: scale(1.06);
+.project-card:hover .project-title-card {
+    transform: scale(0.95);
+    opacity: 0;
 }
 
-/* Option B - Light Glass Overlay on Hover */
+.project-card-title {
+    font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+    background: linear-gradient(135deg, #ffffff 40%, #a1a1aa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Inter', sans-serif;
+}
+
+.project-card-tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.project-card-tech i {
+    font-size: 2.4rem;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+}
+
+.project-card-tech svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+}
+
+.project-card-tech i:hover,
+.project-card-tech svg:hover {
+    transform: translateY(-4px) scale(1.15);
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4)) brightness(1.1);
+}
+
+/* Premium Dark Glass Overlay on Hover */
 .project-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
+    background: radial-gradient(circle at center, rgba(31, 32, 41, 0.98) 0%, rgba(15, 16, 21, 0.99) 100%);
     padding: 3.5rem;
     display: flex;
     flex-direction: column;
@@ -340,26 +389,26 @@ h1, h2, h3, h4 {
     font-size: 1.7rem;
     font-weight: 700;
     margin-bottom: 1.25rem;
-    color: var(--text-color);
+    color: #ffffff;
     letter-spacing: -0.02em;
 }
 
 .project-motivation {
     font-size: 0.9rem;
     line-height: 1.6;
-    color: var(--text-muted);
+    color: #d1d5db;
     margin-bottom: 2rem;
 }
 
 .project-link-btn {
     text-decoration: none;
-    color: var(--text-color);
+    color: #ffffff;
     font-weight: 600;
     font-size: 0.95rem;
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
-    border-bottom: 1.5px solid var(--text-color);
+    border-bottom: 1.5px solid #ffffff;
     padding-bottom: 0.25rem;
     transition: opacity var(--transition-speed);
 }
@@ -595,25 +644,25 @@ h1, h2, h3, h4 {
         gap: 3.5rem;
         text-align: left;
     }
-    
+
     .hero-right {
         align-items: flex-start;
     }
-    
+
     .projects-header {
         margin-bottom: 2.5rem;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 2.5rem;
     }
-    
+
     .footer-container {
         grid-template-columns: 1fr;
         gap: 4rem;
     }
-    
+
     .footer-right {
         justify-content: flex-start;
     }
@@ -623,35 +672,36 @@ h1, h2, h3, h4 {
     .header {
         padding: 1.25rem 5%;
     }
-    
+
     .nav-menu {
-        display: none; /* Mobile navigation */
+        display: none;
+        /* Mobile navigation */
     }
-    
+
     .hero {
         padding: 5rem 5%;
     }
-    
+
     .hero-image-card {
         width: 100%;
         max-width: 300px;
         height: 380px;
     }
-    
+
     .project-overlay {
         padding: 2rem;
     }
-    
+
     .project-overlay-content h3 {
         font-size: 1.4rem;
         margin-bottom: 0.8rem;
     }
-    
+
     .project-motivation {
         font-size: 0.85rem;
         margin-bottom: 1.25rem;
     }
-    
+
     .footer-bottom-container {
         flex-direction: column;
         gap: 1.5rem;
