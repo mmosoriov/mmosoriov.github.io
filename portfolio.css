@@ -272,11 +272,41 @@ h4 {
     margin-bottom: 1.25rem;
 }
 
-/* Projects 2x2 Grid */
+/* Projects Horizontal Scroll */
 .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 1.5rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Custom scrollbar styling */
+.projects-grid::-webkit-scrollbar {
+    height: 6px;
+}
+
+.projects-grid::-webkit-scrollbar-track {
+    background: var(--border-color);
+    border-radius: 9999px;
+}
+
+.projects-grid::-webkit-scrollbar-thumb {
+    background: #b0b0b0;
+    border-radius: 9999px;
+    transition: background 0.3s;
+}
+
+.projects-grid::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+/* Firefox scrollbar styling */
+.projects-grid {
+    scrollbar-width: thin;
+    scrollbar-color: #b0b0b0 var(--border-color);
 }
 
 .project-card {
@@ -287,6 +317,9 @@ h4 {
     background-color: #f7f7f7;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
     cursor: pointer;
+    min-width: min(500px, 80vw);
+    flex-shrink: 0;
+    scroll-snap-align: start;
 }
 
 .project-img-container {
@@ -655,8 +688,7 @@ h4 {
     }
 
     .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
+        gap: 1.5rem;
     }
 
     .footer-container {
