@@ -488,6 +488,42 @@
         </div>
     </footer>
 
+    <script>
+        // Touch-device support for project cards
+        // On touch devices, tapping a card toggles its overlay.
+        // Tapping outside or on another card dismisses the active one.
+        (function () {
+            const isTouchDevice = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+            if (!isTouchDevice) return;
+
+            const cards = document.querySelectorAll('.project-card');
+
+            cards.forEach(function (card) {
+                card.addEventListener('click', function (e) {
+                    // If user tapped a link inside the overlay, let it navigate
+                    if (e.target.closest('.project-link-btn')) return;
+
+                    const wasActive = card.classList.contains('active');
+
+                    // Deactivate all cards first
+                    cards.forEach(function (c) { c.classList.remove('active'); });
+
+                    // Toggle the tapped card (if it wasn't already active, activate it)
+                    if (!wasActive) {
+                        card.classList.add('active');
+                    }
+                });
+            });
+
+            // Tapping outside any card dismisses the active overlay
+            document.addEventListener('click', function (e) {
+                if (!e.target.closest('.project-card')) {
+                    cards.forEach(function (c) { c.classList.remove('active'); });
+                }
+            });
+        })();
+    </script>
+
 </body>
 
 </html>
